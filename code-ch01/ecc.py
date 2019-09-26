@@ -69,7 +69,6 @@ class FieldElement:
         num = pow(other.num, self.prime - 2, self.prime)*self.num % self.prime
         return self.__class__(num, self.prime)
 
-
 class FieldElementTest(TestCase):
 
     def test_ne(self):
